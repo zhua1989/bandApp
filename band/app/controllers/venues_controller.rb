@@ -12,6 +12,7 @@ class VenuesController < ApplicationController
 	end
 
 	def create
-		@venue = Venue.new(venue_params)
+		@venue = Venue.create(venue_params)
+		redirect_to venue_path(@venue)
 	end
 end
