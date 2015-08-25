@@ -1,0 +1,14 @@
+<%= form_for([@venue, @event]) do |f| %>
+	<%= f.label :date %>
+	<%= f.text_field :date %>
+	<%= f.label :alcohol %>
+	<%= f.label :yes %>
+	<%= f.radio_button :alcohol, 'True' %>
+	<%= f.label :no %>
+	<%= f.radio_button :alcohol, 'False' %>	
+	<% @bands.each do |band| %>
+		<%= f.label :band_id, band.name %>
+		<%= f.radio_button :band_id, band.name %>	
+	<% end %>
+	<%= f.submit %>
+<% end %>
