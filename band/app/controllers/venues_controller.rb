@@ -1,6 +1,6 @@
 class VenuesController < ApplicationController
 	def index
-		@venues = Venues.all
+		@venues = Venue.all
 	end
 
 	def show
@@ -9,5 +9,10 @@ class VenuesController < ApplicationController
 
 	def new
 		@venue = Venue.new
+	end
+
+	def create
+		@venue = Venue.create(venue_params)
+		redirect_to venue_path(@venue)
 	end
 end

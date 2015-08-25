@@ -13,7 +13,12 @@ Venue.create(name: "Robert E. Lee Memorial Garden", city: "Wilmington", state: "
 Band.create(name: "Infinite Jellos", genre: "Vaporwave", explicit: false)
 Band.create(name: "The Protomen", genre: "Retro/Electronic", explicit: false)
 
+<<<<<<< HEAD
 Event.create(date: "", alcohol: false, band_id: 1, venue_id: 1)
 Event.create(date: "", alcohol: true, band_id: 2, venue_id: 2)
 
 
+=======
+Event.create(date: "11-2-15", alcohol: false, band_id: 1, venue_id: 1)
+Event.create(date: "11-9-15", alcohol: true, band_id: 2, venue_id: 2)
+>>>>>>> b1582eb3e61ed3f5fea7e3ef7697c9201fd7e254
