@@ -6,7 +6,9 @@
 	<%= f.label :state %>
 	<%= f.text_field :state %>
 	<%= f.label :family_friendly %>
+	<%= f.label :yes %>
 	<%= f.radio_button :family_friendly, 'True' %>
+	<%= f.label :no %>
 	<%= f.radio_button :family_friendly, 'False' %>	
 	<%= f.submit %>
 <% end %>
