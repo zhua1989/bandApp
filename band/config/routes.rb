@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'venues#index'
+  root 'welcome#index'
   shallow do
     resources :venues do
       resources :events
@@ -7,6 +7,12 @@ Rails.application.routes.draw do
   end
 
 
+<<<<<<< HEAD
+=======
+
+  resources :bands, only: [:index, :new, :create]
+
+>>>>>>> 0cea34478feb294ca23eee0347968f51e753d17a
   resources :bands, only: [:index, :new, :create]
   resources :events, only: [:index]
 
@@ -17,7 +23,6 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
