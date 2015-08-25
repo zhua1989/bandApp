@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :bands, only: [:index, :new]
+  resources :bands, only: [:index, :new, :create]
 
 
 
