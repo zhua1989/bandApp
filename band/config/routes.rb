@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :bands, only: [:index]
+  resources :groups, only: [:index]
 
 
 
