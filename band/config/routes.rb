@@ -6,8 +6,15 @@ Rails.application.routes.draw do
     end
   end
 
+<<<<<<< HEAD
+
+  resources :bands, only: [:index, :new, :create]
+
+
+=======
   resources :bands, only: [:index, :new, :create]
   resources :events, only: [:index]
+>>>>>>> b1582eb3e61ed3f5fea7e3ef7697c9201fd7e254
 
 
 
@@ -20,6 +27,8 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+
+
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

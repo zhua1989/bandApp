@@ -1,0 +1,19 @@
+<%= form_for (@band) do |f| %>
+  <%= f.label :name%>
+  <%= f.text_field :name%>
+  <%= f.label :genre%>
+  <%= f.text_field :genre%>
+  <%= f.label :explicit?%>
+  <%= f.label :yes%>
+
+  <%= f.radio_button :explicit, 'Yes'%>
+  <%= f.label :no%>
+
+  <%= f.radio_button :explicit, 'No' %>
+
+  <%=f.submit%>
+
+
+
+
+<% end %>
