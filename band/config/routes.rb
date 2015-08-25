@@ -7,7 +7,11 @@ Rails.application.routes.draw do
     end
   end
 
+<<<<<<< HEAD
   resources :bands, only: [:index, :new, :create]
+=======
+  resources :groups, only: [:index]
+>>>>>>> 496040fd597888a71767904385fe5ac6fbb64efa
 
 
 
