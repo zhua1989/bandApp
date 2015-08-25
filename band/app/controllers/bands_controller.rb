@@ -9,6 +9,8 @@ class BandsController < ApplicationController
   end
 
   def create
+    @new_band = Band.create(band_params)
+    redirect_to root_path
 
   end
 

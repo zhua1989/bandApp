@@ -6,10 +6,10 @@
   <%= f.label :explicit?%>
   <%= f.label :yes%>
 
-  <%= f.radio_button :explicit, 'Yes'%>
+  <%= f.radio_button :explicit, 'true'%>
   <%= f.label :no%>
 
-  <%= f.radio_button :explicit, 'No' %>
+  <%= f.radio_button :explicit, 'false', checked: true %>
 
   <%=f.submit%>
 
