@@ -9,8 +9,6 @@ Rails.application.routes.draw do
 
 
   resources :bands, only: [:index, :new, :create]
-
-  resources :bands, only: [:index, :new, :create]
   resources :events, only: [:index]
 
 
