@@ -2,12 +2,12 @@ Rails.application.routes.draw do
   root 'venues#index'
   shallow do
     resources :venues do
-      resources :bands 
       resources :events
     end
   end
 
-  resources :groups, only: [:index]
+  resources :bands, only: [:index, :new, :create]
+  resources :events, only: [:index]
 
 
 

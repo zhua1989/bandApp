@@ -3,7 +3,7 @@ class CreateEvents < ActiveRecord::Migration
     create_table :events do |t|
       t.string :date
       t.boolean :alcohol
-      t.references :band, index: true, foreign_key: true
+      t.references :group, index: true, foreign_key: true
       t.references :venue, index: true, foreign_key: true
     end
   end

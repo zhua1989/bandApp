@@ -8,6 +8,12 @@
 </head>
 <body>
 
+
+<%= link_to 'See Venues', venues_path(@venue) %><br>
+<%= link_to 'Create Venue', new_venue_path(@venue) %><br>
+<%= link_to 'Create Band', new_band_path(@band) %><br>
+<%= link_to 'Search Events', events_path(@event) %><br>
+
 <%= yield %>
 
 </body>

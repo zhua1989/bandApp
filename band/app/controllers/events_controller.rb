@@ -3,6 +3,10 @@ class EventsController < ApplicationController
 		
 	end
 
+	def method_name
+		
+	end
+
 
 
 end
