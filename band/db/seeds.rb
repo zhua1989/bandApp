@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+
+Venue.create(name: "Gramercy Theatre", city: "New York City", state: "NY", family_friendly: false)
