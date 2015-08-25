@@ -7,12 +7,7 @@ Rails.application.routes.draw do
   end
 
 
-<<<<<<< HEAD
-=======
 
-  resources :bands, only: [:index, :new, :create]
-
->>>>>>> 0cea34478feb294ca23eee0347968f51e753d17a
   resources :bands, only: [:index, :new, :create]
   resources :events, only: [:index]
 
