@@ -15,3 +15,5 @@ Band.create(name: "The Protomen", genre: "Retro/Electronic", explicit: false)
 
 Event.create(date: "", alcohol: false, band_id: 1, venue_id: 1)
 Event.create(date: "", alcohol: true, band_id: 2, venue_id: 2)
+
+
