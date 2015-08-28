@@ -14,15 +14,15 @@ class EventsController < ApplicationController
 		@event = Event.new
 	end
 
-	# def create
-	# 	@venue = Venue.find(params[:venue_id])
-	# 	@event = Event.create(event_params)
-	# 	redirect_to event_path(@event)
-	# end
+	def create
+		@venue = Venue.find(params[:venue_id])
+		@event = Event.create(event_params)
+		redirect_to root_path
+	end
 
-	# private
-	# 	def params
-	# 		params.require(:event).permit(:date, :alcohol, :band_id, :venue_id)
-	# 	end
+	private
+		def params
+			params.require(:event).permit(:date, :alcohol, :band_id, :venue_id)
+		end
 
 end
